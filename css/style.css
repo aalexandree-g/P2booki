@@ -13,6 +13,29 @@
     color: var(--main-color);
 }
 
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.menu:hover {
+    color: blue;
+    border-top-style: solid;
+}
+
+
+
+
+
 body {
     display: flex;
     justify-content: center;
