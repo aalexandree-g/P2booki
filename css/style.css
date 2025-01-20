@@ -9,8 +9,29 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    max-height: 30px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    margin: 30px;
+    padding-top: 15px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top-style: solid;
 }
 
 body {
@@ -21,6 +42,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -30,9 +52,22 @@ a {
     text-decoration: none;
 }
 
+.main-txt {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main-title {
+    font-size: 22px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
+}
+
+.fa-solid {
+    color: var(--main-color);
 }
 
 .card {
