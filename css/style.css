@@ -67,7 +67,7 @@ a {
     align-items: center;
     border: none;
     padding: 0px;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
 }
 
 .recherche-label, .recherche-input, .recherche-button {
@@ -77,6 +77,7 @@ a {
     padding-left: 20px;
     padding-right: 20px;
     border-style: solid;
+    border-width: 1px;
     border-color: #F2F2F2;
 }
 
@@ -101,6 +102,59 @@ a {
     border-color: #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.filtres {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.filtres-label {
+    border: none;
+}
+
+.filtre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #d9d9d9;
+}
+
+.filtre:hover {
+    background-color: #DEEBFF;
+}
+
+.filtre-txt {
+    margin-left: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.fa-info {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    border-width: 1px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .section-title {
@@ -155,6 +209,37 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hebergements-cards a {
+    width: 30%;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 110px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 /****** Populaires ***********/
