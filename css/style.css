@@ -13,6 +13,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 #logo {
@@ -53,12 +54,53 @@ a {
 }
 
 .main-txt {
-    margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .main-title {
     font-size: 22px;
+}
+
+.recherche-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    padding: 0px;
+    margin-bottom: 30px;;
+}
+
+.recherche-label, .recherche-input, .recherche-button {
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-color: #F2F2F2;
+}
+
+.recherche-label {
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.recherche-input {
+    color: black;
+    border-right: none;
+    width: 220px;
+}
+
+.recherche-button {
+    color: white;
+    background-color: #0065FC;
+    border-color: #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .section-title {
@@ -68,6 +110,10 @@ a {
 
 .fa-solid {
     color: var(--main-color);
+}
+
+.fa-location-dot {
+    color: black;
 }
 
 .card {
