@@ -29,11 +29,12 @@ html {
 .info-txt,
 .card-title,
 .afficher-plus,
-.footer-block{
+.footer-links {
     font-size: 1rem;
 }
 
-.filtres {
+.filtres,
+.footer-title {
     font-size: 1.1rem;
 }
 
