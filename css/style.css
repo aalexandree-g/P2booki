@@ -529,4 +529,14 @@ footer a {
     .main-container {
         padding: 0 10px;
     }
+
+    .filtres-buttons {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .filtre {
+        margin-bottom: 20px;
+    }
 }
