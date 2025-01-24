@@ -58,6 +58,7 @@ header {
 
 #logo {
     max-height: 30px;
+    padding-top: 15px;
 }
 
 .menu {
@@ -69,12 +70,14 @@ header {
     margin: 15px;
     margin-left: 60px;
     margin-right: 0px;
-    padding-top: 15px;
+    padding-top: 14px;
 }
 
 .menu a:hover {
     color: #0065FC;
     border-top-style: solid;
+    border-top-width: 2px;
+    
 }
 
 
@@ -83,6 +86,8 @@ header {
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
@@ -120,7 +125,8 @@ a {
 
 .recherche-label,
 .recherche-input,
-.recherche-button {
+.recherche-button,
+.recherche-icon {
     height: 50px;
     font-weight: 700;
     padding-left: 20px;
@@ -142,15 +148,20 @@ a {
 .recherche-input {
     color: black;
     border-right: none;
-    width: 220px;
+    width: 210px;
 }
 
-.recherche-button {
+.recherche-button,
+.recherche-icon {
     color: white;
     background-color: #0065FC;
     border-color: #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+.recherche-icon {
+    display: none;
 }
 
 .filtres,
@@ -400,7 +411,6 @@ footer {
     display: flex;
     flex-direction: column;
     width: 33%;
-    height: 170px;
 }
 
 
@@ -424,6 +434,10 @@ footer a {
         font-size: 14px;
     }
 
+    .menu a {
+        padding-top: 12px;
+    }
+
     .filtres {
         flex-direction: column;
         align-items: flex-start;
@@ -435,6 +449,10 @@ footer a {
 
     .filtre {
         margin-right: 15px;
+    }
+
+    .filtre-txt {
+        white-space: nowrap;
     }
 
     .hebergements-and-populaires {
@@ -463,10 +481,6 @@ footer a {
     .activites-cards img {
         height: 180px;
     }    
-
-    .footer-block {
-        height: 150px;
-    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -485,7 +499,8 @@ footer a {
     }
     
     #logo {
-        max-height: 30px;
+        height: 25px;
+        padding-top: 10px;
     }
 
     nav {
@@ -503,7 +518,8 @@ footer a {
         display: flex;
         justify-content: center;
         border-bottom-style: solid;
-        border-color: #F2F2F2;
+        border-bottom-width: 2px;
+        border-bottom-color: #F2F2F2;
     }
         
     .menu a {
@@ -512,8 +528,7 @@ footer a {
     }
     
     .menu li:hover {
-        border-bottom-style: solid;
-        border-color: #0065FC;
+        border-bottom-color: #0065FC;
         color: #0065FC;
     }
 
@@ -525,19 +540,54 @@ footer a {
 
     /****** BODY ***********/
     .main-container {
-        padding: 0 10px;
+        padding: 0;
+        padding-top: 30px;
+    }
+
+    .main-txt,
+    .recherche,
+    .filtres,
+    .info,
+    .footer-block {
+        padding : 0 20px;
+    }
+
+    .recherche-input {
+        width: 100%;
+    }
+
+    .recherche-button {
+        display: none;
+    }
+
+    .recherche-icon {
+        display: inline;
+        width: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .recherche-icon i {
+        color: white;
+        font-size: 1.2rem;
     }
 
     .filtres-buttons {
-        justify-content: flex-start;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .filtre {
+        flex-grow: 1;
         margin-bottom: 20px;
     }
 
+    .info {
+        margin-bottom: 10px;
+    }
 
 
     /****** HEBERGEMENTS AND POPULAIRES ***********/
@@ -546,15 +596,15 @@ footer a {
     }
 
     .hebergements-and-populaires section {
-        background-color: none;
+        background-color: #F2F2F2;
         width: 100%;
         border-radius: 0px;
-        padding: 0;
         box-sizing: border-box;
     }
 
     .hebergements-and-populaires .hebergements {
         background-color: white;
+        padding-top: 15px;
     }
 
     .populaires-cards,
@@ -579,7 +629,14 @@ footer a {
         height: 15px;
     }
 
+    /****** FOOTER ***********/
     footer {
         flex-direction: column;
+        padding-top: 10px;
     }
+
+    .footer-block {
+        width: 100%;
+        padding-bottom: 10px;
+    }   
 }
