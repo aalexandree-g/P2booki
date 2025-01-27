@@ -39,7 +39,7 @@ html {
 }
 
 .filtre i {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .card-subtitle {
@@ -263,7 +263,7 @@ a {
 
 
 
-/****** HEBERGEMENT ***********/
+/****** HEBERGEMENTS ***********/
 .hebergements {
     width: 65%;
 }
@@ -508,7 +508,6 @@ footer a {
     }
     
     .menu {
-        list-style: none;
         padding: 0px;
         justify-content: space-between;
     }
@@ -590,7 +589,7 @@ footer a {
     }
 
 
-    /****** HEBERGEMENTS AND POPULAIRES ***********/
+    /****** HEBERGEMENTS, POPULAIRES AND ACTIVITES ***********/
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
