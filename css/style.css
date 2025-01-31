@@ -1,6 +1,7 @@
 /****** GENERAL ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -58,7 +59,6 @@ header {
 
 #logo {
     max-height: 30px;
-    padding-top: 15px;
 }
 
 .menu {
@@ -498,10 +498,7 @@ footer a {
         margin-bottom: 0px;
     }
     
-    #logo {
-        height: 25px;
-        padding-top: 10px;
-    }
+  
 
     nav {
         width: 100%;
